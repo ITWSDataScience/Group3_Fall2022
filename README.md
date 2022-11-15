@@ -6,7 +6,7 @@ Optimal placement of renewable energy sources (wind, solar, geothermal) based on
 
 ## Data Sources
 ### Population
-Datafile: [gpw_pop.asc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/gpw_pop.asc.zip)
+Datafile: [gpw_pop.asc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/population_count/gpw_pop.asc.zip)
 
 (Datafile is zipped, unzip to view properly)
 
