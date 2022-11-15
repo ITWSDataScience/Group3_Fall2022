@@ -11,3 +11,9 @@ Datafile: [gpw_pop.asc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/
 (Datafile is zipped, unzip to view properly)
 
 Sourced from: [NASA SEDAC](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11)
+
+### Earthquakes
+
+(Only selected earthquakes with magnitude ≥ 6, as that is the start of 
+
+Sourced from: [NOAA](https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Hazards/iso/xml/G012153.xml&view=getDataView)
