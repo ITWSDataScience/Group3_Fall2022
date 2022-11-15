@@ -1,2 +1,4 @@
 venv/
 gpw_pop.asc
+
+__pycache__/
