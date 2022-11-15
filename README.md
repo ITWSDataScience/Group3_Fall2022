@@ -14,6 +14,6 @@ Sourced from: [NASA SEDAC](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-pop
 
 ### Earthquakes
 
-(Only selected earthquakes with magnitude ≥ 6, as that is the start of 
+(Only selected earthquakes with magnitude ≥ 6, as that is the start of severe building damage)
 
 Sourced from: [NOAA](https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Hazards/iso/xml/G012153.xml&view=getDataView)
