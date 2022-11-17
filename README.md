@@ -31,6 +31,16 @@ Datafile: [earthquakes.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/b
 
 Sourced from: [NOAA](https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Hazards/iso/xml/G012153.xml&view=getDataView)
 
+### Tsunamis
+Datafile: [runups.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/tsunamis/runups.tsv)
+
+ - Data is for years 2012 to 2022
+ - Only selected tsunamis that are "definite", which means there is documentable proof that it occurred
+ - Datafile is TSV format, each row is an occurrence
+ - Data does not display source of tsunamis but rather locations affected by tsunamis
+
+Sourced from: [NOAA](https://www.ngdc.noaa.gov/hazel/view/hazards/tsunami/runup-data?sourceMaxYear=2022&sourceMinYear=2012&sourceMinEventValidity=4)
+
 ## Map
 This is the most up-to-date map with all datasets included:
 
@@ -39,6 +49,7 @@ This is the most up-to-date map with all datasets included:
 Legend:
  - Green: population
  - Red X's: earthquakes
+ - Blue X's: tsunamis
  - Blue pins: wind speed
    - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of wind. The longer the "prick", the higher the wind speed.
 
