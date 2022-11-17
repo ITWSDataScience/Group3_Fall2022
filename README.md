@@ -39,6 +39,8 @@ This is the most up-to-date map with all datasets included:
 Legend:
  - Green: population
  - Red X's: earthquakes
+ - Blue pins: wind speed
+   - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of wind. The longer the "prick", the higher the wind speed.
 
 ## Installation
 ```
