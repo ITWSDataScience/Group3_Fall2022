@@ -60,7 +60,7 @@ Legend:
  - Green: population
  - Red X's: earthquakes
  - Blue X's: tsunamis
- - Sky blue lines: hurricanes
+ - Teal lines: hurricanes
  - Blue pins: wind speed
    - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of wind. The longer the "prick", the higher the wind speed.
 
