@@ -1,5 +1,7 @@
 import csv
 
+earthquake_color = (255, 0, 0)
+
 def lattopx(lat, height):
     adjlat = -lat + 90
     return adjlat / 180 * height
@@ -12,20 +14,20 @@ def marker(pixel_map, x, y):
     for i in range(7):
         k = i - 3
         if x + k >= 0 and y - k >= 0 and x + k < 4320 and y - k < 8640: 
-            pixel_map[y - k, x + k] = (255, 0, 0)
+            pixel_map[y - k, x + k] = earthquake_color
         if x - k >= 0 and y - k >= 0 and x - k < 4320 and y - k < 8640: 
-            pixel_map[y - k, x - k] = (255, 0, 0)
+            pixel_map[y - k, x - k] = earthquake_color
 
     for i in range(6):
         k = i - 2
         if x + k >= 0 and y - k + 1 >= 0 and x + k < 4320 and y - k + 1 < 8640: 
-            pixel_map[y - k + 1, x + k] = (255, 0, 0)
+            pixel_map[y - k + 1, x + k] = earthquake_color
         if x + k - 1 >= 0 and y - k >= 0 and x + k - 1 < 4320 and y - k < 8640: 
-            pixel_map[y - k, x + k - 1] = (255, 0, 0)
+            pixel_map[y - k, x + k - 1] = earthquake_color
         if x - k + 1 >= 0 and y - k >= 0 and x - k + 1 < 4320 and y - k < 8640: 
-            pixel_map[y - k, x - k + 1] = (255, 0, 0)
+            pixel_map[y - k, x - k + 1] = earthquake_color
         if x - k >= 0 and y - k + 1 >= 0 and x - k < 4320 and y - k + 1 < 8640: 
-            pixel_map[y - k + 1, x - k] = (255, 0, 0)
+            pixel_map[y - k + 1, x - k] = earthquake_color
 
 def earthquakes(pixel_map):
     with open('./natural_disasters/earthquakes/earthquakes.tsv', 'r') as f:

@@ -41,6 +41,16 @@ Datafile: [runups.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/m
 
 Sourced from: [NOAA](https://www.ngdc.noaa.gov/hazel/view/hazards/tsunami/runup-data?sourceMaxYear=2022&sourceMinYear=2012&sourceMinEventValidity=4)
 
+### Tropical Cyclones / Hurricanes
+Datafile: [hurricanes.csv.zip](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/hurricanes/hurricanes.csv.zip)
+
+ - Data is for years 1980 to 2022
+ - Only displayed data for years 2012 to 2022
+ - Datafile is CSV format, each row is an occurrence
+ - Datafile is zipped, unzip to view properly
+
+Sourced from: [NOAA NCEI](https://www.ncei.noaa.gov/products/international-best-track-archive?name=rsmc-data)
+
 ## Map
 This is the most up-to-date map with all datasets included:
 
@@ -50,6 +60,7 @@ Legend:
  - Green: population
  - Red X's: earthquakes
  - Blue X's: tsunamis
+ - Sky blue lines: hurricanes
  - Blue pins: wind speed
    - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of wind. The longer the "prick", the higher the wind speed.
 

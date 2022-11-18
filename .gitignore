@@ -1,4 +1,7 @@
 venv/
 gpw_pop.asc
+hurricanes.csv
+
+.DS_Store
 
 __pycache__/

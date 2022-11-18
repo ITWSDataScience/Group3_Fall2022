@@ -2,6 +2,8 @@ import netCDF4 as nc
 import sys
 import numpy
 
+wind_color = (71,142,255)
+
 def lattopx(lat, height):
     adjlat = -lat + 90
     return adjlat / 180 * height
@@ -13,11 +15,11 @@ def longtopx(long, width):
 def marker(pixel_map, x, y, val):
     for i in range(5):
         for j in range(5):
-            pixel_map[y + i - 2, x + j - 2] = (71,142,255)
+            pixel_map[y + i - 2, x + j - 2] = wind_color
     
     for i in range(int(val)):
         for j in range(3):
-            pixel_map[y + i + 3, x + j - 1] = (71,142,255)
+            pixel_map[y + i + 3, x + j - 1] = wind_color
 
 def wind(pixel_map):
     filename = './energy_strength/wind/avg_wind_speed.nc'
