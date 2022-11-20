@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 100)) # ascii data is 8640 by 4320
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 0)) # ascii data is 8640 by 4320
 pixel_map = img.load() # load pixel map for image
 
 def init_map(pixel_map):
@@ -16,7 +16,7 @@ def init_map(pixel_map):
                 if cell_val < 0: # skip pixel if no population
                     continue
 
-                pixel_map[c, rn] = (30, 30, 30, 100)
+                pixel_map[c, rn] = (0, 0, 0, 100)
                 # set pixel at current location to minimum gray
                 # square root population to fit within spectrum
 
