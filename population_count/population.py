@@ -20,7 +20,9 @@ def population(pixel_map):
                 if cell_val < 0: # skip pixel if no population
                     continue
 
-                pixel_map[c, rn] = (0, int(math.sqrt(cell_val) * 0.5), 0, 100)
+                pix_val = int(math.sqrt(cell_val) * 0.5)
+
+                pixel_map[c, rn] = (0, pix_val, 0, 100 if pix_val > 0 else 0)
                 # set pixel at current location to minimum gray + green based on population level
                 # square root population to fit within spectrum
 
