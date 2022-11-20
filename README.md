@@ -52,9 +52,9 @@ Datafile: [hurricanes.csv.zip](https://github.com/ITWSDataScience/Group3_Fall202
 Sourced from: [NOAA NCEI](https://www.ncei.noaa.gov/products/international-best-track-archive?name=rsmc-data)
 
 ## Map
-This is the most up-to-date map with all datasets included:
+See [here](https://bnidevs.github.io/datascience_team3_f22/) for most up-to-date visualization
 
-![map](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/map.png)
+(Visualization was originally a single picture but data overlays became too condensed and hard to see.)
 
 Legend:
  - Green: population
