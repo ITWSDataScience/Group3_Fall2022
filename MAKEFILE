@@ -1,0 +1,24 @@
+venv:
+	python3 -m venv venv
+
+install:
+	. venv/bin/activate
+	pip install -r requirements.txt
+
+population: 
+	cd population_count; python3 population.py
+
+earthquakes: 
+	cd natural_disasters/earthquakes; python3 earthquakes.py
+
+hurricanes:
+	cd natural_disasters/hurricanes; python3 hurricanes.py
+
+tsunamis:
+	cd natural_disasters/tsunamis; python3 tsunamis.py
+
+wind:
+	cd energy_strength/wind; python3 wind.py
+
+runall: install population earthquakes hurricanes tsunamis wind
+	python3 main.py

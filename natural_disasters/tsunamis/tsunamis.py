@@ -1,4 +1,8 @@
 import csv
+from PIL import Image
+
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 0))
+pixel_map = img.load()
 
 tsunami_color = (0, 0, 255)
 
@@ -30,7 +34,7 @@ def marker(pixel_map, x, y):
             pixel_map[y - k + 1, x - k] = tsunami_color
 
 def tsunamis(pixel_map):
-    with open('./natural_disasters/tsunamis/runups.tsv', 'r') as f:
+    with open('./runups.tsv', 'r') as f:
         eqreader = csv.reader(f, delimiter='\t', quotechar='"')
 
         i = 0
@@ -45,3 +49,6 @@ def tsunamis(pixel_map):
             pxr, pxc = lattopx(lat, 4320), longtopx(long, 8640) # convert coordinates to pixel values
 
             marker(pixel_map, pxr, pxc)
+
+tsunamis(pixel_map)
+img.save('tsunamis.png')

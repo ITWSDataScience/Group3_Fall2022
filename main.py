@@ -1,17 +1,24 @@
 from PIL import Image
-from population_count.population import population 
-from natural_disasters.earthquakes.earthquakes import earthquakes
-from natural_disasters.tsunamis.tsunamis import tsunamis
-from natural_disasters.hurricanes.hurricanes import hurricanes
-from energy_strength.wind.wind import wind
 
-img = Image.new('RGB', [8640, 4320], 0) # ascii data is 8640 by 4320
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 100)) # ascii data is 8640 by 4320
 pixel_map = img.load() # load pixel map for image
 
-population(pixel_map)
-earthquakes(pixel_map)
-tsunamis(pixel_map)
-hurricanes(pixel_map)
-wind(pixel_map)
+def init_map(pixel_map):
+    with open('./population_count/gpw_pop.asc', 'r') as f:
+        for i in range(6):
+            f.readline() # skip pre data
 
+        for rn in range(4320):
+            k = f.readline().split(' ')
+            for c in range(8640):
+                cell_val = float(k[c]) # read population in grid
+
+                if cell_val < 0: # skip pixel if no population
+                    continue
+
+                pixel_map[c, rn] = (30, 30, 30, 100)
+                # set pixel at current location to minimum gray
+                # square root population to fit within spectrum
+
+init_map(pixel_map)
 img.save('map.png')

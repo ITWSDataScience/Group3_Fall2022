@@ -1,4 +1,8 @@
 import csv
+from PIL import Image
+
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 0))
+pixel_map = img.load()
 
 earthquake_color = (255, 0, 0)
 
@@ -30,7 +34,7 @@ def marker(pixel_map, x, y):
             pixel_map[y - k + 1, x - k] = earthquake_color
 
 def earthquakes(pixel_map):
-    with open('./natural_disasters/earthquakes/earthquakes.tsv', 'r') as f:
+    with open('./earthquakes.tsv', 'r') as f:
         eqreader = csv.reader(f, delimiter='\t', quotechar='"')
 
         i = 0
@@ -43,3 +47,6 @@ def earthquakes(pixel_map):
             pxr, pxc = lattopx(lat, 4320), longtopx(long, 8640) # convert coordinates to pixel values
 
             marker(pixel_map, pxr, pxc)
+
+earthquakes(pixel_map)
+img.save('earthquakes.png')

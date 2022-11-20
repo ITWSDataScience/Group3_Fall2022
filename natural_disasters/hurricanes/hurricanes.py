@@ -1,5 +1,9 @@
 import csv
 import math
+from PIL import Image
+
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 0))
+pixel_map = img.load()
 
 hurricane_line = (0, 255, 238)
 hurricane_cone = (0, 255, 238, 0.4)
@@ -73,7 +77,7 @@ def marker(pixel_map, hurricanepath):
 def hurricanes(pixel_map):
     years = [str(i) for i in range(2012, 2022)]
 
-    with open('./natural_disasters/hurricanes/hurricanes.csv', 'r') as f:
+    with open('./hurricanes.csv', 'r') as f:
         eqreader = csv.reader(f, delimiter=',', quotechar='"')
 
         i = 0
@@ -133,3 +137,6 @@ def hurricanes(pixel_map):
 
             if row[15].strip() != '' and int(row[15]) == 0:
                 landfall = True
+
+hurricanes(pixel_map)
+img.save('./hurricanes.png')

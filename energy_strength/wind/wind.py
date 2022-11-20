@@ -1,6 +1,8 @@
 import netCDF4 as nc
-import sys
-import numpy
+from PIL import Image
+
+img = Image.new('RGBA', [8640, 4320], (0, 0, 0, 0))
+pixel_map = img.load()
 
 wind_color = (71,142,255)
 
@@ -15,14 +17,16 @@ def longtopx(long, width):
 def marker(pixel_map, x, y, val):
     for i in range(5):
         for j in range(5):
-            pixel_map[y + i - 2, x + j - 2] = wind_color
+            if x + j - 2 >= 0 and y + i - 2 >= 0 and x + j - 2 < 4320 and y + i - 2 < 8640:
+                pixel_map[y + i - 2, x + j - 2] = wind_color
     
     for i in range(int(val)):
         for j in range(3):
-            pixel_map[y + i + 3, x + j - 1] = wind_color
+            if x + j - 1 >= 0 and y + i + 3 >= 0 and x + j - 1 < 4320 and y + i + 3 < 8640:
+                pixel_map[y + i + 3, x + j - 1] = wind_color
 
 def wind(pixel_map):
-    filename = './energy_strength/wind/avg_wind_speed.nc'
+    filename = './avg_wind_speed.nc'
     ds = nc.Dataset(filename)
 
     # print(len(ds['M2TMNXFLX_5_12_4_SPEED'][:][0]))
@@ -41,5 +45,7 @@ def wind(pixel_map):
             if cpx == 8640:
                 cpx -= 1
 
-            if pixel_map[cpx, rpx] != (0,0,0) and pixel_map[cpx, rpx] != (255,0,0):
-                marker(pixel_map, rpx, cpx, val)
+            marker(pixel_map, rpx, cpx, val)
+
+wind(pixel_map)
+img.save('wind.png')
