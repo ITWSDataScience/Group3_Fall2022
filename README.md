@@ -71,6 +71,7 @@ Legend:
  - Teal lines: hurricanes
  - Blue pins: wind speed
  - Red pins: solar energy
+ 
 Notes:
  - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of energy. The longer the "prick", the higher the average energy.
 
