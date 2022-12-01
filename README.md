@@ -66,12 +66,11 @@ Legend:
 
 ## Installation
 ```
-python3 -m venv venv
-. venv/bin/activate
-pip install -r requirements.txt
+make venv
+make install
 ```
 
 ## Execution
 ```
-python3 main.py
+make runall
 ```
