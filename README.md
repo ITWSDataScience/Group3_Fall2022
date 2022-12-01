@@ -72,5 +72,12 @@ make install
 
 ## Execution
 ```
+make -j10 runall
+```
+
+`-j` flag is optional for parallel execution, `10` signifies number of simultaneous threads
+
+If sequential execution is preferred, use command written below instead
+```
 make runall
 ```
