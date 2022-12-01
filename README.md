@@ -22,6 +22,14 @@ Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022
 
 Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2012-11-01T00:00:00Z&endtime=2022-11-30T23:59:59Z&data=M2TMNXFLX_5_12_4_SPEED)
 
+### Solar Energy (Incident Surface Shortwave Radiation)
+Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/energy_strength/wind/avg_solar_energy.nc)
+
+ - Data is from 2019-01-01 to 2022-11-30
+ - Datafile is NetCDF format, tracking time-averaged solar eve on surface
+
+Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2019-01-01T00:00:00Z&endtime=2022-11-30T23:59:59Z&data=FLDAS_NOAH01_CP_GL_M_001_SWdown_f_tavg)
+
 ### Earthquakes
 Datafile: [earthquakes.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/earthquakes/earthquakes.tsv)
 
@@ -62,7 +70,9 @@ Legend:
  - Blue X's: tsunamis
  - Teal lines: hurricanes
  - Blue pins: wind speed
-   - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of wind. The longer the "prick", the higher the wind speed.
+ - Red pins: solar energy
+Notes:
+ - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of energy. The longer the "prick", the higher the average energy.
 
 ## Installation
 ```
