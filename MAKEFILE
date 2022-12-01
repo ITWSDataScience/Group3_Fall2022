@@ -20,7 +20,10 @@ tsunamis:
 wind:
 	cd energy_strength/wind; python3 wind.py
 
+solar:
+	cd energy_strength/solar; python3 solar.py
+
 map:
 	python3 main.py
 
-runall: population earthquakes hurricanes tsunamis wind map
+runall: population earthquakes hurricanes tsunamis wind solar map
