@@ -73,15 +73,16 @@ See [here](https://bnidevs.github.io/datascience_team3_f22/) for most up-to-date
 (Visualization was originally a single picture but data overlays became too condensed and hard to see.)
 
 Legend:
- - Green: population
+ - Teal shading: population
  - Red X's: earthquakes
  - Blue X's: tsunamis
  - Teal lines: hurricanes
+ - Green pins: vegetation
  - Blue pins: wind speed
  - Red pins: solar energy
  
 Notes:
- - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the amount of energy. The longer the "prick", the higher the average energy.
+ - The box on the left side of the pin represents the location, and the "prick" on the right side of the pin represents the value. The longer the "prick", the higher the average value.
 
 ## Installation
 ```
