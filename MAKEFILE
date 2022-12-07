@@ -17,6 +17,9 @@ hurricanes:
 tsunamis:
 	cd natural_disasters/tsunamis; python3 tsunamis.py
 
+vegetation:
+	cd surface_properties/vegetation; python3 vegetation.py
+
 wind:
 	cd energy_strength/wind; python3 wind.py
 
@@ -26,4 +29,4 @@ solar:
 map:
 	python3 main.py
 
-runall: population earthquakes hurricanes tsunamis wind solar map
+runall: population earthquakes hurricanes tsunamis vegetation wind solar map

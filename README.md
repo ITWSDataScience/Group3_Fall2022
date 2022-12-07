@@ -30,6 +30,14 @@ Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022
 
 Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2019-01-01T00:00:00Z&endtime=2022-11-30T23:59:59Z&data=FLDAS_NOAH01_CP_GL_M_001_SWdown_f_tavg)
 
+### Vegetation (Leaf Area Index)
+Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/surface_properties/vegetation/vegetation.nc)
+
+ - Data is from 2022-01-01 to 2022-10-31
+ - Datafile is NetCDF format, tracking time-averaged vegetation on land
+
+Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2022-01-01T00:00:00Z&endtime=2022-10-31T23:59:59Z&data=M2TMNXLND_5_12_4_LAI)
+
 ### Earthquakes
 Datafile: [earthquakes.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/earthquakes/earthquakes.tsv)
 

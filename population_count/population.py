@@ -22,7 +22,7 @@ def population(pixel_map):
 
                 pix_val = int(math.sqrt(cell_val) * 0.5)
 
-                pixel_map[c, rn] = (0, pix_val, 0, 100)
+                pixel_map[c, rn] = (0, pix_val, pix_val, 100)
                 # set pixel at current location to minimum gray + green based on population level
                 # square root population to fit within spectrum
 
