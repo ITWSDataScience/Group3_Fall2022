@@ -8,12 +8,10 @@ def longtopx(long, width):
 
 
 # Gets long and lat from pixels
-def pxtolong(px):
-    width = 8640
+def pxtolong(px, width):
     adjlong = (px / width) * 360 
     return adjlong - 180
 
-def pxtolat(px):
-    height = 4320
-    adjlat = (px/height) * 180
+def pxtolat(px, height):
+    adjlat = (px / height) * 180
     return -(adjlat -90)
