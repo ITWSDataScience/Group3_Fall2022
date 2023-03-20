@@ -6,7 +6,7 @@ Optimal placement of renewable energy sources (wind, solar, geothermal) based on
 
 ## Data Sources
 ### Population
-Datafile: [gpw_pop.asc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/population_count/gpw_pop.asc.zip)
+Datafile: [gpw_pop.asc](population_count/gpw_pop.asc.zip)
 
  - Data is for 2020 values
  - Datafile is zipped, unzip to view properly
@@ -15,7 +15,7 @@ Datafile: [gpw_pop.asc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/
 Sourced from: [NASA SEDAC](https://sedac.ciesin.columbia.edu/data/set/gpw-v4-population-count-rev11)
 
 ### Wind Speed
-Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/energy_strength/wind/avg_wind_speed.nc)
+Datafile: [avg_wind_speed.nc](energy_strength/wind/avg_wind_speed.nc)
 
  - Data is from 2012 to 2022
  - Datafile is NetCDF format, tracking average wind speed on surface
@@ -23,7 +23,7 @@ Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022
 Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2012-11-01T00:00:00Z&endtime=2022-11-30T23:59:59Z&data=M2TMNXFLX_5_12_4_SPEED)
 
 ### Solar Energy (Incident Surface Shortwave Radiation)
-Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/energy_strength/wind/avg_solar_energy.nc)
+Datafile: [avg_wind_speed.nc](energy_strength/wind/avg_solar_energy.nc)
 
  - Data is from 2019-01-01 to 2022-11-30
  - Datafile is NetCDF format, tracking time-averaged solar energy (AKA incident surface shortwave radiation) usable by solar panels on surface
@@ -31,7 +31,7 @@ Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022
 Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2019-01-01T00:00:00Z&endtime=2022-11-30T23:59:59Z&data=FLDAS_NOAH01_CP_GL_M_001_SWdown_f_tavg)
 
 ### Vegetation (Leaf Area Index)
-Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/surface_properties/vegetation/vegetation.nc)
+Datafile: [avg_wind_speed.nc](surface_properties/vegetation/vegetation.nc)
 
  - Data is from 2022-01-01 to 2022-10-31
  - Datafile is NetCDF format, tracking time-averaged vegetation on land
@@ -39,7 +39,7 @@ Datafile: [avg_wind_speed.nc](https://github.com/ITWSDataScience/Group3_Fall2022
 Sourced from: [NASA Giovanni](https://giovanni.gsfc.nasa.gov/giovanni/#service=TmAvMp&starttime=2022-01-01T00:00:00Z&endtime=2022-10-31T23:59:59Z&data=M2TMNXLND_5_12_4_LAI)
 
 ### Earthquakes
-Datafile: [earthquakes.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/earthquakes/earthquakes.tsv)
+Datafile: [earthquakes.tsv](natural_disasters/earthquakes/earthquakes.tsv)
 
  - Data is for years 2012 to 2022
  - Only selected earthquakes with magnitude ≥ 6, as that is the start of severe building damage
@@ -48,7 +48,7 @@ Datafile: [earthquakes.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/b
 Sourced from: [NOAA](https://data.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/MGG/Hazards/iso/xml/G012153.xml&view=getDataView)
 
 ### Tsunamis
-Datafile: [runups.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/tsunamis/runups.tsv)
+Datafile: [runups.tsv](natural_disasters/tsunamis/runups.tsv)
 
  - Data is for years 2012 to 2022
  - Only selected tsunamis that are "definite", which means there is documentable proof that it occurred
@@ -58,7 +58,7 @@ Datafile: [runups.tsv](https://github.com/ITWSDataScience/Group3_Fall2022/blob/m
 Sourced from: [NOAA](https://www.ngdc.noaa.gov/hazel/view/hazards/tsunami/runup-data?sourceMaxYear=2022&sourceMinYear=2012&sourceMinEventValidity=4)
 
 ### Tropical Cyclones / Hurricanes
-Datafile: [hurricanes.csv.zip](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/natural_disasters/hurricanes/hurricanes.csv.zip)
+Datafile: [hurricanes.csv.zip](natural_disasters/hurricanes/hurricanes.csv.zip)
 
  - Data is for years 1980 to 2022
  - Only displayed data for years 2012 to 2022
@@ -68,7 +68,7 @@ Datafile: [hurricanes.csv.zip](https://github.com/ITWSDataScience/Group3_Fall202
 Sourced from: [NOAA NCEI](https://www.ncei.noaa.gov/products/international-best-track-archive?name=rsmc-data)
 
 ### Integrated Crisis Early Warning System Event Data
-Datafile: [iecws_conflict_data_2019_2023.7z](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/conflicts/icews_conflict_data_2019_2023.7z)
+Datafile: [iecws_conflict_data_2019_2023.7z](conflicts/icews_conflict_data_2019_2023.7z)
 
  - Data is for years 2019 to 2023
  - Data is not currently displayed
