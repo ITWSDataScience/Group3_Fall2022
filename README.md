@@ -67,6 +67,14 @@ Datafile: [hurricanes.csv.zip](https://github.com/ITWSDataScience/Group3_Fall202
 
 Sourced from: [NOAA NCEI](https://www.ncei.noaa.gov/products/international-best-track-archive?name=rsmc-data)
 
+### Integrated Crisis Early Warning System Event Data
+Datafile: [iecws_conflict_data_2019_2023.7z](https://github.com/ITWSDataScience/Group3_Fall2022/blob/main/conflicts/icews_conflict_data_2019_2023.7z)
+
+ - Data is for years 2019 to 2023
+ - Data is not currently displayed
+ - Datafile is CSV format, each row is an occurance
+ - Datafile is zipped using .7z (7z over zip due to large file size); extracted is ~655 MB
+
 ## Map
 See [here](https://bnidevs.github.io/datascience_team3_f22/) for most up-to-date visualization
 
