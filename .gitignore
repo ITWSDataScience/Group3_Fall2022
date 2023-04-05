@@ -3,7 +3,7 @@ env/
 gpw_pop.asc
 hurricanes.csv
 20230108-icews-events.tab
-
+icews_conflict_data_2019_2023.csv
 .DS_Store
 
 __pycache__/
