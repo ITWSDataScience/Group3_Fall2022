@@ -7,6 +7,6 @@ icews_conflict_data_2019_2023.csv
 .DS_Store
 
 __pycache__/
-
+*.asc
 *.csv
 *.tab
