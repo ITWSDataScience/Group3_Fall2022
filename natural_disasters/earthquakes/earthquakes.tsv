@@ -1,5 +1,4 @@
 "Search Parameters"	"Year"	"Mo"	"Dy"	"Hr"	"Mn"	"Sec"	"Tsu"	"Vol"	"Location Name"	"Latitude"	"Longitude"	"Focal Depth (km)"	"Mag"	"MMI Int"	"Deaths"	"Death Description"	"Missing"	"Missing Description"	"Injuries"	"Injuries Description"	"Damage ($Mil)"	"Damage Description"	"Houses Destroyed"	"Houses Destroyed Description"	"Houses Damaged"	"Houses Damaged Description"	"Total Deaths"	"Total Death Description"	"Total Missing"	"Total Missing Description"	"Total Injuries"	"Total Injuries Description"	"Total Damage ($Mil)"	"Total Damage Description"	"Total Houses Destroyed"	"Total Houses Destroyed Description"	"Total Houses Damaged"	"Total Houses Damaged Description"
-"[""2012 <= Year >= 2022"",""Earthquake Magnitude >= 6""]"																																						
 	2012	1	30	5	11	0.9			"PERU:  ICA"	-14.168	-75.635	43	6.4						119	3		1				1					119	3		1				1
 	2012	2	2	13	34	40.6	5442		"VANUATU ISLANDS"	-17.827	167.133	23	7																									
 	2012	2	6	3	49	12.5			"PHILIPPINES:  NEGROS ORIENTAL PROVINCE"	9.999	123.206	11	6.7		51	2	62	2	112	3	9	3	15000	4			51	2	62	2	112	3	9	3	15000	4		
